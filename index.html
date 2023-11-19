@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  
+  <title>E-commerce product page</title>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="alpha-wrapper">
+    <div class="gray-overlay" onclick="waveAside()"></div>
+    <header>
+      <nav>
+        <div class="burger">
+          <div class="burger-1"></div>
+          <div class="burger-2"></div>
+          <div class="burger-3"></div>
+        </div>
+  
+        <h3 class="logo">sneakers</h3>
+        
+        <div class="nav-links">
+  
+          <div class="imgDiv">
+            <img src="images/icon-close - Copy copy.svg" class="cancelBtnNavLinks">
+          </div>
+          <span>
+            <p>Collections</p>
+          </span>
+          <span>
+            <p>Men</p>
+          </span>
+          <span>
+            <p>Women</p>
+          </span>
+          <span>
+            <p>About</p>
+          </span>
+          <span>
+            <p>Contact</p>  
+          </span>
+        </div>
+  
+        <div class="last-div">
+          <div style="position:relative;">
+            <div class="number-div">
+              <p id="number-div-number">0</p>
+            </div>
+            <img src="./images/icon-cart - Copy.svg" alt="cart-icon" class="cart-icon">
+          </div>
+          <div class="avatar">
+            <img src="images/image-avatar.png" alt="cart-icon" class="cart-icon">
+          </div>
+        </div>
+      </nav>
+  
+      <div class="cart-pop-up">
+        <div class="cart-text-div">
+          <p>Cart</p>
+        </div>
+  
+        <div class="cart-div-scrollable">
+          <p id="empty-text">Your cart is empty</p>
+          
+  
+          <div class="card">
+            <div class="card-1">
+              <img src="images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            
+            <div class="card-2">
+              <section>
+                <p>Fall Limited Edition Sneakers</p>
+              </section>
+              <span id="currency">$</span>
+              <small id="amount">125.00</small>
+              <span id="times">x</span>
+              <span id="numberSpan">0</span>
+              <span id="totalSpan">
+                <span>$</span>
+                <span id="total">?</span>
+              </span>
+            </div>
+            <div class="card-3">
+              <img id="delImg" src="images/icon-delete.svg" alt="">
+            </div>
+          </div>
+          <div class="checkout">
+              <p>Checkout</p>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <div class="container">
+      <div class="img-container">  
+        <div class="large-img-div">
+          <div id="prev-btn">
+            <img src="images/icon-previous.svg" alt="previous button">
+          </div>
+          <div id="next-btn">
+            <img src="images/icon-next.svg" alt="next button">
+          </div>
+  
+          <img src="images/image-product-1.jpg" alt="product image" class="img-1">
+          <img src="images/image-product-2.jpg" alt="product image" class="img-2">
+          <img src="images/image-product-3.jpg" alt="product image" class="img-3">
+          <img src="images/image-product-4.jpg" alt="product image" class="img-4">
+        </div>
+        
+        <div class="small-img-div">
+          <img  id="img-1" src="images/image-product-1-thumbnail.jpg" alt="img-1">
+          <img  id="img-2" src="images/image-product-2-thumbnail.jpg" alt="img-2">
+          <img  id="img-3" src="images/image-product-3-thumbnail.jpg" alt="img-3">
+          <img  id="img-4" src="images/image-product-4-thumbnail.jpg" alt="img-4">
+        </div>
+      </div>
+  
+      <div class="text-container">
+        <small>SNEAKER COMPANY</small>
+        <h1>  Fall Limited <br> Edition Sneakers</h1>
+        <p>  These low-profile sneakers are your perfect casual wear <br> companion. Featuring a 
+          durable rubber outer sole, they’ll <br> withstand everything the weather can offer.</p>
+  
+        <div class="small-wrapper">
+          <div class="price-div">
+            <h3 class="price">$125.00</h3>
+            <h3 class="slashed-price">$250.00</h3>
+          </div>
+    
+          <div class="discount-div">
+            <div class="small-text-div">
+              <p>50%</p>
+            </div>
+          </div>
+        </div>  
+  
+        <div class="cart-div">
+          <div class="counter">
+            <div id="minus">
+              <img src="images/icon-minus.svg" alt="">
+            </div>
+            
+            <div class="number">
+              <p id="cart-number">0</p>
+            </div>
+            
+            <div id="plus">
+              <img src="images/icon-plus.svg" alt="">
+            </div>
+            
+          </div>
+  
+          <div class="cart">
+            <div>
+              <img src="images/icon-cart.svg" alt="cart image">
+              <h3 id="addToCart">Add to cart</h3>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="pop-up-wrapper">
+      <div class="pop-up">
+        <div class="cancel">
+          <img src="images/icon-close.svg" alt="">
+        </div>
+        <div class="big-img-div">
+          <img src="images/image-product-1.jpg" class="big-img" alt="">
+        </div>
+        <div class="little-img-div">
+          <img src="images/image-product-1-thumbnail.jpg" class="little-img-1" alt="">
+          <img src="images/image-product-2-thumbnail.jpg" class="little-img-2" alt="">
+          <img src="images/image-product-3-thumbnail.jpg" class="little-img-3" alt="">
+          <img src="images/image-product-4-thumbnail.jpg" class="little-img-4" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
